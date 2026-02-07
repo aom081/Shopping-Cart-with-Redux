@@ -14,7 +14,7 @@ const AddProductForm = () => {
       category: "",
       imageUrl: "",
       price: "",
-      available: "",
+      quantity: "",
     },
   });
 
@@ -96,7 +96,7 @@ const AddProductForm = () => {
           <div>
             <label className={labelClasses}>Quantity</label>
             <input
-              {...register("available", { required: true, min: 0 })}
+              {...register("quantity", { required: true, min: 0 })}
               type="number"
               placeholder="0"
               className={inputClasses}
